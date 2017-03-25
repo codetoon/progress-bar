@@ -1,0 +1,109 @@
+.bg-progressbar {
+margin:5px 0;
+background:#eee;
+float:left;
+}
+
+.progressbar {
+background:#fff;
+display:block;
+width:100%;
+padding-top:30px;
+position:relative;
+overflow: hidden;
+}
+
+.progressbar .bg-progressbar {
+display:inline-block;
+float:left;
+background:#d8d8d8;
+height:0;
+border-top:7px solid #d8d8d8;
+border-bottom:7px solid #d8d8d8;
+border-left:7px solid #fff;
+position:relative;
+border-radius:0 2px 2px 0;
+margin:5px 1px;
+}
+
+.progressbar .bg-progressbar:first-of-type {
+border-left:7px solid #d8d8d8;
+border-radius:7px 2px 2px 7px;
+}
+
+.progressbar .bg-progressbar:first-of-type .inner-bar {
+border-left:7px solid #2a93c7;
+border-radius:7px 2px 2px 7px;
+}
+
+.progressbar .bg-progressbar:last-of-type {
+border-right:0;
+border-radius:0 7px 7px 0;
+}
+
+.progressbar .bg-progressbar:last-of-type > .right-arrow {
+display:none;
+}
+
+.progressbar .bg-progressbar > .right-arrow {
+height:0;
+display:block;
+width:1px;
+margin-top:-7px;
+margin-right:-7px;
+border-top:7px solid transparent;
+border-left:7px solid #d8d8d8;
+border-bottom:7px solid transparent;
+float:right;
+position:absolute;
+right:0;
+z-index:99;
+}
+
+.progressbar .inner-bar {
+max-width:100%;
+display:inline-block;
+float:left;
+height:0;
+width:0;
+min-width:2px;
+margin-top:-7px;
+border-top:7px solid #2a93c7;
+border-bottom:7px solid #2a93c7;
+border-left:7px solid transparent;
+margin-left:-7px;
+position:relative;
+z-index:999;
+border-radius:0 2px 2px 0;
+overflow:visible!important;
+}
+
+.progressbar .inner-bar .right-arrow {
+height:0;
+display:block;
+width:1px;
+margin-right:-7px;
+margin-top:-7px;
+border-top:7px solid transparent;
+border-left:7px solid #2a93c7;
+border-bottom:7px solid transparent;
+float:right;
+}
+
+.progressbar .bg-progressbar .label {
+display:block;
+margin-top:-40px;
+text-align:center;
+color:#ababab;
+}
+
+.progressbar .label {
+width:100%;
+position:relative;
+margin-top:-34px;
+text-align:center;
+}
+
+.progressbar .bg-progressbar.active .label {
+font-weight:700;
+}
